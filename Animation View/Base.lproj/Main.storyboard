@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eU1-aB-kIU">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SecondVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SecondVC" modalPresentationStyle="overFullScreen" id="BYZ-38-t0r" customClass="SecondVC" customModule="Animation_View" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vUG-5s-fMk">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0Oa-OW-BAJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spinner-remove" translatesAutoresizingMaskIntoConstraints="NO" id="iqw-3F-54B">
+                                <rect key="frame" x="146.66666666666666" y="376" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="VOC-jQ-OHC"/>
+                                    <constraint firstAttribute="height" constant="100" id="grk-pJ-wfG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vUG-5s-fMk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GHx-gw-eBv"/>
+                            <constraint firstItem="vUG-5s-fMk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ict-eo-u8B"/>
+                            <constraint firstAttribute="bottom" secondItem="vUG-5s-fMk" secondAttribute="bottom" id="L81-Ik-z0E"/>
+                            <constraint firstItem="vUG-5s-fMk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c3p-xV-GgA"/>
+                            <constraint firstItem="iqw-3F-54B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r9K-TC-b6s"/>
+                            <constraint firstItem="iqw-3F-54B" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="s54-B7-fLg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="iqw-3F-54B" id="ARb-gs-xNH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-109.16030534351144" y="34.507042253521128"/>
+        </scene>
+        <!--FirstVC-->
+        <scene sceneID="hPZ-Og-Slq">
+            <objects>
+                <viewController storyboardIdentifier="FirstVC" id="eU1-aB-kIU" customClass="FirstVC" customModule="Animation_View" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YSc-2D-5Mp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neon-4k-hd-best-for-desktop-wallpaper-preview" translatesAutoresizingMaskIntoConstraints="NO" id="c7E-uj-WjW">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sAu-Wb-GOL"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="c7E-uj-WjW" secondAttribute="bottom" id="POa-oS-Pen"/>
+                            <constraint firstItem="c7E-uj-WjW" firstAttribute="top" secondItem="YSc-2D-5Mp" secondAttribute="top" id="nLk-Rg-hRT"/>
+                            <constraint firstItem="c7E-uj-WjW" firstAttribute="leading" secondItem="sAu-Wb-GOL" secondAttribute="leading" id="yUo-6y-UUI"/>
+                            <constraint firstItem="c7E-uj-WjW" firstAttribute="trailing" secondItem="sAu-Wb-GOL" secondAttribute="trailing" id="zns-kJ-NUC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QvR-P8-vpu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="684.73282442748086" y="34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="neon-4k-hd-best-for-desktop-wallpaper-preview" width="728" height="410"/>
+        <image name="spinner-remove" width="499" height="500"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
